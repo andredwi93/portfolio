@@ -16,7 +16,7 @@ function Projects() {
       <div className="max-w-[990px] mx-auto w-full">
         <h2 className="text-2xl text-center font-semibold">Projects</h2>
         <p className="text-lg text-center">
-          some of the projects I've worked on.
+          some of the projects I&apos;ve worked on.
         </p>
         <div className="relative mt-20">
           <Swiper

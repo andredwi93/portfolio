@@ -63,6 +63,7 @@ function Contact() {
                   href="https://www.linkedin.com/in/andriansyah-dwi-5634a1131/"
                   target="_blank"
                   className="text-lg font-semibold"
+                  rel="noreferrer"
                 >
                   Andriansyah Dwi
                 </a>
