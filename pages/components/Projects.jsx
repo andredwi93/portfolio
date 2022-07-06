@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
-import { ProjectsData } from "./ProjectsData";
+import { ProjectsData } from "../data/ProjectsData";
 
 function Projects() {
   return (

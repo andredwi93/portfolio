@@ -1,5 +1,5 @@
 import React from "react";
-import { SkillData } from "./SkillData";
+import { SkillData } from "../data/SkillData";
 import Image from "next/image";
 
 function Skill() {
