@@ -8,7 +8,7 @@ function Skill() {
       <div className="max-w-[990px] mx-auto w-full">
         <h2 className="text-2xl text-center font-semibold">Skills</h2>
         <p className="text-lg text-center">Some of my skills.</p>
-        <div className="grid grid-cols-3 gap-7 mt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-7 mt-20 px-4 sm:px-0">
           {SkillData.map((skill) => (
             <div className="bg-white flex items-center p-6 rounded-md shadow-md" key={skill.id}>
               <div className="w-16 h-16 rounded-full overflow-hidden mr-5">

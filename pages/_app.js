@@ -1,5 +1,7 @@
 import Head from "next/head";
 import "../styles/globals.css";
+// eslint-disable-next-line
+import "swiper/css/bundle";
 import Navbar from "./components/Navbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

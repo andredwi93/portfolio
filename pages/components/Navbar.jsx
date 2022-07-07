@@ -6,7 +6,7 @@ export default function Navbar() {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
   const [textColor, setTextColor] = useState("white");
-  const [shadow, setShadow] = useState(false)
+  const [shadow, setShadow] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
@@ -17,11 +17,11 @@ export default function Navbar() {
       if (window.scrollY >= 90) {
         setColor("white");
         setTextColor("black");
-        setShadow(true)
+        setShadow(true);
       } else {
         setColor("transparent");
         setTextColor("white");
-        setShadow(false)
+        setShadow(false);
       }
     };
     window.addEventListener("scroll", changeColor);
@@ -30,11 +30,16 @@ export default function Navbar() {
   return (
     <div
       style={{ backgroundColor: color }}
-      className={`fixed top-0 left-0 z-10 w-full ease-in duration-300 ${shadow ? 'shadow-md' : ''}`}
+      className={`fixed top-0 left-0 z-10 w-full ease-in duration-300 ${
+        shadow ? "shadow-md" : ""
+      }`}
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          <h1 style={{ color: textColor }} className="text-4xl font-bold cursor-pointer">
+          <h1
+            style={{ color: textColor }}
+            className="text-4xl font-bold cursor-pointer"
+          >
             ADW93
           </h1>
         </Link>
@@ -49,7 +54,7 @@ export default function Navbar() {
             <Link href="/#skill">Skills</Link>
           </li>
           <li className="p-4">
-            <Link href="/#project">Project</Link>
+            <Link href="/#project">Projects</Link>
           </li>
           <li className="p-4">
             <Link href="/#contact">Contacts</Link>
@@ -72,17 +77,17 @@ export default function Navbar() {
           } right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300`}
         >
           <ul>
-            <li className="text-4xl hover:text-gray-500 p-4">
-              <Link href="/">Profile</Link>
+            <li onClick={handleNav} className="text-4xl hover:text-gray-500 p-4">
+              <Link href="/#profile">Profile</Link>
             </li>
-            <li className="text-4xl hover:text-gray-500 p-4">
-              <Link href="/#project">Project</Link>
+            <li onClick={handleNav} className="text-4xl hover:text-gray-500 p-4">
+              <Link href="/#skill">Skills</Link>
             </li>
-            <li className="text-4xl hover:text-gray-500 p-4">
-              <Link href="/skill">Skills</Link>
+            <li onClick={handleNav} className="text-4xl hover:text-gray-500 p-4">
+              <Link href="/#project">Projects</Link>
             </li>
-            <li className="text-4xl hover:text-gray-500 p-4">
-              <Link href="/contact">Contacts</Link>
+            <li onClick={handleNav} className="text-4xl hover:text-gray-500 p-4">
+              <Link href="/#contact">Contacts</Link>
             </li>
           </ul>
         </div>

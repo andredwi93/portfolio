@@ -36,8 +36,8 @@ function Contact() {
       );
   };
   return (
-    <div id="contact" className="pt-32 pb-44">
-      <div className="max-w-[990px] mx-auto w-full bg-[#F7F7FB] flex justify-between">
+    <div id="contact" className="pt-32 pb-0 sm:pb-44">
+      <div className="max-w-[990px] mx-auto w-full bg-[#F7F7FB] block sm:flex justify-between">
         <div className="py-10 pl-10">
           <h2 className="text-2xl font-semibold">Contact</h2>
           <div className="mt-10">
@@ -72,7 +72,7 @@ function Contact() {
           </div>
         </div>
         <div className="w-px h-auto bg-[#E8E8FB]"></div>
-        <div className="p-10 pl-0 w-1/2">
+        <div className="p-10 pl-10 sm:pl-0 w-full sm:w-1/2">
           <form ref={form} onSubmit={sendEmail}>
             <div className="mb-4">
               <label className="block" htmlFor="name">
